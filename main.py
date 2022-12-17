@@ -18,6 +18,8 @@ typePrint(f'{fg.green}{util.bold}You have just arrived in this world, and you wi
 input(prompts.enter)
 print(util.clear)
 printChoices('You find yourself in a grass plain. To the north is a village. To the west is mountains. To the south and east there are more plains.\nDo you want to:', ['Go to the village', 'Go to the mountains', 'Explore the plains'])
-choice = input('>')
+choice = input('> ')
 if choice == '1':
     helpers.scenes.first_choice_village.main()
+elif choice == '2':
+    helpers.scenes.first_choice_mountains.main()
